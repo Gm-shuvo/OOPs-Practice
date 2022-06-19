@@ -1,3 +1,5 @@
+import encapsulation.Encapsulation;
+
 public class Main
 {
   public static void main (String[]args)
@@ -10,13 +12,19 @@ public class Main
       p1.doing();
       
       //constructor 
-      Person p = new Person(34, "gm shuvo");
+      //Person p = new Person(34, "gm shuvo");
 
-      Developer dev = new Developer(22, "joya");
+      // Developer dev = new Developer(22, "joya");
       
-      dev.doing();
-      System.out.println(p.age + " " + p.name);
-      System.out.println(Person.count);
+      // dev.doing();
+      
+      // System.out.println(p.age + " " + p.name);
+
+      // System.out.println(Person.count);
+
+      Encapsulation obj = new Encapsulation();
+      obj.dowork();
+
   }
 }
 
