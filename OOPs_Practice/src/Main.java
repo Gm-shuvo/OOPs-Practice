@@ -1,4 +1,4 @@
-import encapsulation.Encapsulation;
+import encapsulation.Encapsulations;
 
 public class Main
 {
@@ -22,8 +22,9 @@ public class Main
 
       // System.out.println(Person.count);
 
-      Encapsulation obj = new Encapsulation();
+      Encapsulations obj = new Encapsulations();
       obj.dowork();
+      
 
   }
 }
