@@ -11,10 +11,25 @@ public class Main
       
       //constructor 
       Person p = new Person(34, "gm shuvo");
+
+      Developer dev = new Developer(22, "joya");
       
+      dev.doing();
       System.out.println(p.age + " " + p.name);
       System.out.println(Person.count);
   }
+}
+
+class Developer extends Person {
+  public Developer(int age, String name) {
+    super(age, name);
+  }
+
+  //Run time polymorphism
+  void doing(){
+      System.out.println(name + " is Running fast");
+  }
+
 }
 
 class Person
@@ -36,6 +51,7 @@ class Person
       
   }
   
+  //compile time polymorphism
   void doing(){
       System.out.println(name + " is walking");
   }
